@@ -1,0 +1,80 @@
+using System;
+
+namespace Lesson2Types
+{
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+            //Defining variables (primitive value data types)
+            byte byteA, byteB, byteC;
+            sbyte sbyteA, sbyteB, sbyteC, sbyteD;
+            short shortA, shortB, shortC;
+            ushort ushortA, ushortB, ushortC;
+            int intA, intB, intC;
+            uint uintA, uintB, uintC;
+            long longA, longB, longC;
+            ulong ulongA, ulongB, ulongC;
+            float floatA, floatB;
+            double doubleA, doubleB;
+            decimal decimalD = 1234567890.1234567890M;
+            char charA = 'a', charB = 'b', charC = 'c';
+            bool booleanA = true, booleanB = false;
+
+
+            //Arithmetic operations
+
+            //Addition
+            intA = 61345;
+            intB = 22678;
+            intC = intA + intB;
+            Console.WriteLine($"intA ({intA}) + intB ({intB}) = intC ({intC})");
+
+            //Substraction
+            ushortA = 0xFF;
+            ushortB = 0xAA;
+            ushortC = (ushort)(ushortA - ushortB);
+            Console.WriteLine($"ushortA ({ushortA}) - ushortB ({ushortB}) = ushortC ({ushortC})");
+
+            //Multiplication
+            longA = 100000000000;
+            shortB = -2;
+            longC = longA * shortB;
+            Console.WriteLine($"longA ({longA}) * shortB ({shortB}) = longC ({longC})");
+
+            //Division
+            floatA = -3.14F;
+            uintB = 17;
+            Console.WriteLine($"{floatA} / {uintB} = {floatA / uintB}");
+
+            //Remainder
+            ulongA = 11;
+            ulongB = 4;
+            ulongC = ulongA % ulongB;
+            Console.WriteLine($"ulongA ({ulongA}) % ulongB ({ulongB}) = ulongC ({ulongC})");
+
+            //Addition with overflow
+            byteA = 60;
+            byteB = 200;
+            byteC = (byte)(byteA + byteB);
+            Console.WriteLine($"byteA ({byteA}) + byteB ({byteB}) = byteC ({byteC})");
+
+            //Increment
+            ++byteA;
+            Console.WriteLine($"Incremented byteA: {byteA}");
+
+            //Decrement
+            byteC = (byte)(byteB---byteA);
+            Console.WriteLine($"byteB-- - byteA =  {byteC}");
+
+
+            //Boxing and unboxing
+            int val = 7;
+            object obj = val; //boxing
+            Console.WriteLine();
+            Console.WriteLine($"Boxed value: {obj}");
+            int valUnboxed = (int)obj; //unboxing
+            Console.WriteLine($"Unboxed value: {obj}");
+        }
+    }
+}
