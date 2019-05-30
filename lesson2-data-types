@@ -47,6 +47,10 @@ namespace Lesson2Types
             uintB = 17;
             Console.WriteLine($"{floatA} / {uintB} = {floatA / uintB}");
 
+            intA = 1;
+            intB = 0;
+            //intC = intA / intB; //exception
+
             //Remainder
             ulongA = 11;
             ulongB = 4;
@@ -74,7 +78,7 @@ namespace Lesson2Types
             Console.WriteLine();
             Console.WriteLine($"Boxed value: {obj}");
             int valUnboxed = (int)obj; //unboxing
-            Console.WriteLine($"Unboxed value: {obj}");
+            Console.WriteLine($"Unboxed value: {valUnboxed}");
         }
     }
 }
