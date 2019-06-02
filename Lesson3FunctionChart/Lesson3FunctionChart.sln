@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson3FunctionChart", "Lesson3FunctionChart\Lesson3FunctionChart.csproj", "{6A02FAFA-E1BA-40C0-BCA5-98F709D00FF3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A02FAFA-E1BA-40C0-BCA5-98F709D00FF3}.Debug|x86.ActiveCfg = Debug|x86
+		{6A02FAFA-E1BA-40C0-BCA5-98F709D00FF3}.Debug|x86.Build.0 = Debug|x86
+		{6A02FAFA-E1BA-40C0-BCA5-98F709D00FF3}.Release|x86.ActiveCfg = Release|x86
+		{6A02FAFA-E1BA-40C0-BCA5-98F709D00FF3}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+EndGlobal

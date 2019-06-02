@@ -1,0 +1,6 @@
+/Users/dmitrynovik/Projects/Lesson3FunctionChart/Lesson3FunctionChart/bin/Debug/Lesson3FunctionChart.exe
+/Users/dmitrynovik/Projects/Lesson3FunctionChart/Lesson3FunctionChart/bin/Debug/Lesson3FunctionChart.pdb
+/Users/dmitrynovik/Projects/Lesson3FunctionChart/Lesson3FunctionChart/obj/x86/Debug/Lesson3FunctionChart.csprojAssemblyReference.cache
+/Users/dmitrynovik/Projects/Lesson3FunctionChart/Lesson3FunctionChart/obj/x86/Debug/Lesson3FunctionChart.csproj.CoreCompileInputs.cache
+/Users/dmitrynovik/Projects/Lesson3FunctionChart/Lesson3FunctionChart/obj/x86/Debug/Lesson3FunctionChart.exe
+/Users/dmitrynovik/Projects/Lesson3FunctionChart/Lesson3FunctionChart/obj/x86/Debug/Lesson3FunctionChart.pdb
