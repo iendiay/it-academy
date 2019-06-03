@@ -157,7 +157,7 @@ namespace Lesson3Function
 
             }
 
-        endProgram:
+            endProgram:
             Console.ReadKey();
 
         }
