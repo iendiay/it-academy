@@ -66,24 +66,31 @@ namespace Lesson5Array
 
 
             //read values from the file
-            /*
-            int[] A;
-            string[] _lines = System.IO.File.ReadAllLines(@"file2.rtf");
-            List<int> A_list = new List<int>();
+            int[] Arr;
+            string[] lines = System.IO.File.ReadAllLines(@"text3.txt");
+            List<int> list = new List<int>();
 
-            foreach (var _line in _lines)
+            int k = 0;
+
+            foreach (var line in lines)
             {
-                A_list.Add(int.Parse(_line));
+
+                list.Add(int.Parse(line));
             }
 
-            A = A_list.ToArray();
-            */
+            Arr = list.ToArray();
+
+            foreach (var el in Arr)
+            {
+                Console.Write($"Arr[{k}] = {el} ");
+                k++;
+            }
 
 
+            //max value in column and row
             int[,] matrix = {       { 3 , 1, 2},
                                      { 5, 10, 0},
                                      { 20, 50, 30} };
-
           
             int m = 3; //5
             int max = 0;
@@ -121,13 +128,14 @@ namespace Lesson5Array
             }
 
 
+            //foreach
             int[] data = { 1, 5, 7, 4, 3 };
             var sum2 = 0;
             foreach (var element in data)
                 sum2 += element;
             Console.WriteLine($"sum2 = {sum2}");
 
-                
+             
 
         }
     }
