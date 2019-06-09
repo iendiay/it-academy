@@ -21,7 +21,6 @@ namespace Lesson6Collections
             arrNumbers.RemoveAt(2);
             arrNumbers.Remove(25);
 
-
             arrNumbers.Insert(1, 111);
 
             arrNumbers.Remove("Hello");
