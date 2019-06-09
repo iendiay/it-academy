@@ -13,7 +13,6 @@ namespace Lesson6FunctionsAccuracyOneLoop
     {
         public static void Main(string[] args)
         {
-
             double y1 = 0, y2 = 0, x = 0;
             double rowMember = 0;
             int k = 1;
