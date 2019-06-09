@@ -18,9 +18,11 @@ namespace Lesson6FunctionsAccuracyOneLoop
             double rowMember = 0;
             int k = 1;
             int i = 0, j = 0;
+
             bool flag = false;
+
             //accuracy
-            double e1 = 0.01, e2 = 0.001, e3 = 0.0001, e = 0.01;
+            double e = 0.01;
 
             double xStart = -0.6;
 
@@ -28,7 +30,6 @@ namespace Lesson6FunctionsAccuracyOneLoop
             //int columnQuantity = 0;
 
             double[,] array = new double[20, 8];
-
 
 
             x = xStart;
@@ -65,18 +66,15 @@ namespace Lesson6FunctionsAccuracyOneLoop
                     while (true);
 
                     //Console.WriteLine("x = {0:0.00} y = {1:0.0000} k = {2}", x, y2, k);
-
                     y2 = 0;
                     k = 1;
                     x = Math.Round(x + 0.05, 2);
-
                 }
 
                 e = e / 10;
                 x = xStart;
                 j = j + 2;
                 flag = true;
-
             }
         
 
@@ -136,13 +134,11 @@ namespace Lesson6FunctionsAccuracyOneLoop
 
             Console.SetCursorPosition(2 * Console.WindowWidth/8, 1);
 
-
             for (i = 2*Console.WindowWidth/8; i < Console.WindowWidth; i++)
             {
                 //Console.SetCursorPosition(2 * Console.WindowWidth / 8, 1);
                 Console.Write("-");
             }
-
 
             for (i = 0; i < 8; i++)
             {
@@ -172,6 +168,7 @@ namespace Lesson6FunctionsAccuracyOneLoop
                         Console.WriteLine(Math.Round(array[i, j / (Console.WindowWidth / 8)], 4));
                         //Console.WriteLine(array[i, 1]);
                     }
+
                     Console.SetCursorPosition(Console.WindowWidth-1, i + 4);
                     Console.Write("|");
                 }
