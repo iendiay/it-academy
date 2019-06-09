@@ -34,7 +34,6 @@ namespace Lesson6Collections
             }
             */
 
-
             /////list
             List<int> arrNumbers = new List<int>();
 
