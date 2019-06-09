@@ -44,7 +44,6 @@ namespace Lesson6FunctionsAccuracyOneLoop
                         y1 = 3 * x - (x + 1 / x) * Math.Log(1 - x * x) + 2 * Math.Log((1 - x) / (1 + x));
                         array[i, j + 1] = y1;
                         //Console.WriteLine("x = {0:0.00} y = {1:0.000000}", array[i, 0], array[i, 1]);
-
                     }
 
                     do
