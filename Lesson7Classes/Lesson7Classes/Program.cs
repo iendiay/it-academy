@@ -32,7 +32,7 @@ namespace Lesson7Classes
         {
             age = a;
         }
-
+        //overrided setAge
         public void setAge(int a, string dob)
         {
             age = a;
