@@ -49,6 +49,7 @@ namespace Lesson7Classes
         {
             Console.WriteLine($"Age: {age}; DOB: {dateOfBirth} Name: {name}; Adress: {adress}; Quantity: {quantity}");
         }
+
     }
 
 
@@ -58,12 +59,33 @@ namespace Lesson7Classes
         public string position;
         private double salary;
 
+        public void setSalary(double s)
+        {
+            salary = s;
+        }
+
+
         //overrided virtual method
         public override void printInfo()
         {
             Console.WriteLine($"Age: {getAge()}; Name: {name}; Position: {position}; Salary: {salary}");
         }
 
+
+        public static Employee operator +(Employee salary1, Employee salary2)
+        {
+            return new Employee { salary = salary1.salary + salary2.salary };
+        }
+
+        public static bool operator >(Employee salary1, Employee salary2)
+        {
+            return salary1.salary > salary2.salary;
+        }
+
+        public static bool operator <(Employee salary1, Employee salary2)
+        {
+            return salary1.salary < salary2.salary;
+        }
 
     }
 
@@ -127,11 +149,24 @@ namespace Lesson7Classes
             people[1] = new Person(100, "Isaac Newton", "London");
             people[1].printInfo();
 
-
+            Console.WriteLine("--------");
 
             Employee e2 = new Employee();
+            e2.setSalary(500);
             e2.printInfo();
 
+            e1.setSalary(300);
+            e1.printInfo();
+
+            //overloaded operators
+            bool s1s2 = e1 > e2;
+            Console.WriteLine(s1s2);
+
+            s1s2 = e1 < e2;
+            Console.WriteLine(s1s2);
+
+            Employee e3 = e1 + e2;
+            e3.printInfo();
 
 
         }
