@@ -9,8 +9,8 @@ namespace Lesson9LibraryConsole
             Library library = new Library();
             library.AddBook();
             library.ShowBooks();
-            //Console.WriteLine("Hello World!");
-            
+            library.ChangeBookInformation();
+            library.DeleteBook();
         }
     }
 }
