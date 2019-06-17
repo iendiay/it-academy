@@ -31,9 +31,9 @@ namespace Lesson10oop
             return X * Y;
         }  
 
-        public float getDiagonal()
+        public virtual float getDiagonal()
         {
-            return D;
+            return Math.Sqrt(X*X + Y*Y);
         }
            
     }
@@ -53,6 +53,11 @@ namespace Lesson10oop
         public override int Square()
         {
             return X * X;
+        }
+
+        public override float getDiagonal()
+        {
+            return Math.Sqrt(X * X + X * X);
         }
 
     }
@@ -75,6 +80,8 @@ namespace Lesson10oop
 
             rect = q;
             Console.WriteLine("Square area: " + rect.Square());
+
+            //q = rect; //error
 
         }
     }
