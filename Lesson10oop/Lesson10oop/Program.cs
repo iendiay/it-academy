@@ -11,7 +11,7 @@ namespace Lesson10oop
 
     class Rectangle : Shape2D
     {
-        public float D;
+        public double D;
 
         /*
         public Rectangle(Shape2D shape)
@@ -31,7 +31,7 @@ namespace Lesson10oop
             return X * Y;
         }  
 
-        public virtual float getDiagonal()
+        public virtual double getDiagonal()
         {
             return Math.Sqrt(X*X + Y*Y);
         }
@@ -55,7 +55,7 @@ namespace Lesson10oop
             return X * X;
         }
 
-        public override float getDiagonal()
+        public override double getDiagonal()
         {
             return Math.Sqrt(X * X + X * X);
         }
