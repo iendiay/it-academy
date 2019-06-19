@@ -24,9 +24,6 @@ namespace Lesson11Abstract
             Console.WriteLine("Your cash: " + cash);
             return cash;
         } 
-
-
-
     }
 
     abstract class ATMPriorbank : ATM
