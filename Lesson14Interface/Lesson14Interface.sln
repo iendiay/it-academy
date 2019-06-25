@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson14Interface", "Lesson14Interface\Lesson14Interface.csproj", "{A660A0BB-1187-42B5-A6DC-35FB6121D8C5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A660A0BB-1187-42B5-A6DC-35FB6121D8C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A660A0BB-1187-42B5-A6DC-35FB6121D8C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A660A0BB-1187-42B5-A6DC-35FB6121D8C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A660A0BB-1187-42B5-A6DC-35FB6121D8C5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
