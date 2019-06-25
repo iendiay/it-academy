@@ -44,8 +44,11 @@ namespace Lesson12Bank
                     case "shcd":
                         bank.ShowCards();
                         break;
-                    case "putsum":
-                        cli
+                    case "putm":
+                        bank.PutMoney();
+                        break;
+                    case "getm":
+                        bank.GetMoney();
                         break;
                     case "exit":
                         return;
