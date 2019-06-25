@@ -76,7 +76,7 @@ namespace Lesson12Bank
         public void DeleteClient()
         {
 
-            Console.WriteLine("Input client ID: ");
+            Console.WriteLine("Input the client ID: ");
             uint clientID = Convert.ToUInt32(Console.ReadLine());
 
             int index = clients.IndexOf(clients.Find(item => item.ID == clientID));
@@ -180,6 +180,10 @@ namespace Lesson12Bank
 
         public void PutMoney()
         {
+            Console.WriteLine("Input the client ID");
+
+            Console.WriteLine("Input the value: ");
+            decimal value = Convert.ToDecimal(Console.ReadLine());
 
         }
 
