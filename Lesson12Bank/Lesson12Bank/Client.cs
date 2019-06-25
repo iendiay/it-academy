@@ -12,6 +12,12 @@ namespace Lesson12Bank
             _numberOfCards = 0;
         }
 
+        public Client(uint id, uint numberOfCards)
+        {
+            _id = id;
+            _numberOfCards = numberOfCards;
+        }
+
         public uint ID
         {
             get
@@ -38,12 +44,15 @@ namespace Lesson12Bank
             }
         }
 
-
         public void ShowAccountInfo()
+        {
+            
+        }
+
+        public void Transaction()
         {
 
         }
-
 
     }
 }
