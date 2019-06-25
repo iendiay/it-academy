@@ -100,10 +100,12 @@ namespace Lesson12Bank
 
         public void ChangeClientInformation()
         {
+            /*
             using (StreamReader sr = new StreamReader(filePathClients, System.Text.Encoding.Default))
             {
 
             }
+            */
 
             Console.WriteLine("Input client ID: ");
             uint clientID = Convert.ToUInt32(Console.ReadLine());
@@ -160,8 +162,7 @@ namespace Lesson12Bank
             {
                 foreach (Card cardItem in cards)
                 {
-                    sw.WriteLine(_card.ID + ";" + _client.NumberOfCards + ";" + _client.Surname + ";" + _client.Name + ";" +
-                                 _client.DateOfBirth + ";" + _client.Adress + ";" + _client.Phone + ";" + _client.Email);
+                    sw.WriteLine(_card.ID + ";" + _card.Type + ";" + _card.Currency + ";" + _card.Sum + ";" + _card.ClientID);
                 }
 
             }
