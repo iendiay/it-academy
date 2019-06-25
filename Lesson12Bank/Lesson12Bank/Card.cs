@@ -9,6 +9,18 @@ namespace Lesson12Bank
         private decimal _sum;
         private uint _clientID;
 
+        public string ID
+        {
+            get
+            {
+                return _id;
+            }
+
+            set
+            {
+                _id = value;
+            }
+        }
 
         public string Type
         {
@@ -74,13 +86,20 @@ namespace Lesson12Bank
 
         public void PutMoney(decimal cash)
         {
-            _sum = _sum - cash;
+            _sum = _sum + cash;
         }
 
         public decimal GetMoney(decimal cash)
         {
-            _sum = _sum - cash;
-            return cash;
+            if (cash > _sum)
+            {
+                _sum = _sum - cash;
+                return cash;
+            }
+            else
+            {
+                return -1;
+            }
         }
 
     }
