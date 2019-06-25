@@ -13,9 +13,9 @@ namespace Lesson12Bank
             Console.WriteLine("deletecl - delete a client");
             Console.WriteLine("changecl - change client information");
             Console.WriteLine("showcl - show clients");
-            Console.WriteLine("addcd - add a card");
-            Console.WriteLine("deletecd - delete a card");
-            Console.WriteLine("showcd - show cards");
+            Console.WriteLine("addcard - add a card");
+            Console.WriteLine("deletecard - delete a card");
+            Console.WriteLine("showcard - show cards");
             Console.WriteLine("exit - exit the program");
 
             do
@@ -26,22 +26,22 @@ namespace Lesson12Bank
                     case "addcl":
                         bank.AddClient();
                         break;
-                    case "deletecl":
+                    case "delcl":
                         bank.DeleteClient();
                         break;
-                    case "changecl":
+                    case "chcl":
                         bank.ChangeClientInformation();
                         break;
-                    case "showcl":
+                    case "shcl":
                         bank.ShowClients();
                         break;
                     case "addcd":
                         bank.AddCard();
                         break;
-                    case "deletecd":
+                    case "delcd":
                         bank.DeleteCard();
                         break;
-                    case "showcd":
+                    case "shcd":
                         bank.ShowCards();
                         break;
                     case "exit":
