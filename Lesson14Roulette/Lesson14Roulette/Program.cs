@@ -22,8 +22,6 @@ namespace Lesson14Roulette
 
         static void Main(string[] args)
         {
-            
-
             Roulette roulette = new Roulette();
             roulette.GetNumber += ShowMessage;
 
