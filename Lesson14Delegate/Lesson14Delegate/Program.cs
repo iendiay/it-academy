@@ -10,7 +10,6 @@ namespace Lesson14Delegate
         delegate void Delegate1();
         delegate void Delegate2();
 
-       
 
         static void Main(string[] args)
         {
@@ -37,11 +36,14 @@ namespace Lesson14Delegate
             //Console.WriteLine(result);
 
             /////////////////////////
+            Console.WriteLine("------------------");
+
             Delegate1 del1 = new Delegate1(Method);
             Delegate2 del2 = new Delegate2(Method);
 
             //int result = del2;
-            del2 = del1.Invoke;
+            //del2 = del1.Invoke;
+            del2.Invoke();
             Delegate2 del3 = new Delegate2(del1);
             Delegate del = new Delegate1(Method);
             Console.WriteLine(del.GetType().BaseType.Name);
@@ -62,7 +64,7 @@ namespace Lesson14Delegate
         /////////////
         static void Method()
         {
-            Console.WriteLine("/nMethod");
+            Console.WriteLine("Method");
         }
     }
 }
