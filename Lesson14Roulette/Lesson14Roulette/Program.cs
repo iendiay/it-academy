@@ -1,4 +1,6 @@
 ﻿using System;
+using NLog;
+
 
 namespace Lesson14Roulette
 {
@@ -22,6 +24,11 @@ namespace Lesson14Roulette
 
         static void Main(string[] args)
         {
+
+            Logger logger = LogManager.GetCurrentClassLogger();
+            //logger.Trace("111");
+
+
             Roulette roulette = new Roulette();
             roulette.GetNumber += ShowMessage;
 
