@@ -25,7 +25,7 @@ namespace Lesson14Roulette
         static void Main(string[] args)
         {
 
-            Logger logger = LogManager.GetCurrentClassLogger();
+            //Logger logger = LogManager.GetCurrentClassLogger();
             //logger.Trace("111");
 
 
