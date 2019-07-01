@@ -36,15 +36,11 @@ namespace Lesson15ExceptionDLL
                             Console.WriteLine(ex.Message);
                         }
                         break;
-
                     case "exit":
                         return;
                 }
             }
             while (true);
-
-
-
 
         }
     }
